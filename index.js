@@ -29,3 +29,11 @@ function isPalindrome(str) {
     }
 }
 
+
+function addUpTo(array, index) {
+    if(index > 0){
+        return array[index]+  addUpTo(array, index - 1)
+    }else{
+        return array[index]
+    } 
+}
