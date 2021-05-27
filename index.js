@@ -37,3 +37,23 @@ function addUpTo(array, index) {
         return array[index]
     } 
 }
+
+
+function maxOf(array) {
+    let maxNum = Math.max(array[0], array[1])
+    if(array.length > 1) {
+        
+        array.shift()
+        debugger
+        maxOf(array)
+        return maxNum
+    }
+    else{
+        debugger
+        return array[0]
+    } 
+       
+   
+}
+
+maxOf([1, 4, 5, 3])
